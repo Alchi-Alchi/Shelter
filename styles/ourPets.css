@@ -1,0 +1,81 @@
+﻿#ourFriends {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+}
+
+#ourFriends > h3 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 2.4em 0 1.1em 0;
+  color: #545454;
+}
+
+#menu > li > a {
+  color: #545454;
+}
+
+.header {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#paginator {
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+  margin: 0 0 3em 0;
+}
+
+.pages > li > a {
+  text-decoration: none;
+}
+
+.pages > li > a > button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  margin: 0 0.7em 7em 0.7em;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.pages > li > a > button:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+}
+
+.pagination > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.selected {
+  background-color: #F1CDB3 !important;
+}
+
+.disabled {
+  border: 2px solid #CDCDCD !important;
+  color: #CDCDCD !important;
+}
+
+.disabled:hover {
+  background-color: #FFFFFF !important;
+}

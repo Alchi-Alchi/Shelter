@@ -1,0 +1,190 @@
+﻿body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  min-height: 10em;
+}
+
+#logo {
+  position: relative;
+  left: 3%;
+  top: 4.2em;
+  text-decoration: none;
+}
+
+#logo > div > h1 {
+  letter-spacing: 0.06em;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 10%;
+  color: #545454;
+}
+
+#logo > div > span {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #545454;
+}
+
+nav {
+  position: relative;
+  right: 2%;
+  top: 4.6em;
+}
+
+#menu {
+  display: flex;
+  list-style-type: none;
+}
+
+#menu > li > a {
+  margin: 10px 15px;
+  text-decoration: none;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+#menu > li :hover {
+  text-decoration: underline;
+  text-decoration-color: #F1CDB3;
+  text-decoration-thickness: 3px;
+}
+
+#cardsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+
+#card > img {
+  margin: 1em 19px 1em 19px;
+}
+
+#card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  min-height: 30em;
+}
+
+#card:hover #learnMoreBtn{
+  box-shadow: 0 0 5px 5px #FFFFFF;
+}
+
+#card:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+}
+
+#card > span {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+#learnMoreBtn {
+  position: relative;
+  top: 1.7em;
+  padding: 14px;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+#learnMoreBtn:hover {
+  background-color: #292929;
+  color: #F1CDB3;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+  background-image: url(../images/start-screen-gradient-background.png);
+}
+
+#footer-puppy {
+  margin-top: 5em;
+}
+
+#contacts, #adress {
+  width: 23%;
+}
+
+#contacts {
+  margin: 2.8em 0 0 2.8em;
+}
+
+#adress {
+  margin: 2.8em 0 0 -4em;
+}
+
+#contacts > h3, #adress > h3 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+#contacts > h4, #adress > h4 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+#contacts > a > img, #adress > a > img {
+  float: left;
+  margin-right: 1em;
+}
+
+#active {
+  text-decoration-line: underline;
+  text-decoration-color: #F1CDB3;
+  text-decoration-thickness: 3px;
+}
