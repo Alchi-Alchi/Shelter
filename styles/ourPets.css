@@ -1,7 +1,7 @@
 ﻿#ourFriends {
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #F6F6F6;
 }
@@ -23,7 +23,7 @@
 }
 
 .header {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@
 
 .pagination {
   display: flex;
-  margin: 0 0 3em 0;
+  margin: 0 1em 3em -1em;
 }
 
 .pages > li > a {
@@ -78,4 +78,27 @@
 
 .disabled:hover {
   background-color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  #card:nth-last-child(-n+2) {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu__btn > #partOfBurger,
+  .menu__btn > #partOfBurger::before,
+  .menu__btn > #partOfBurger::after {
+  background-color: #292929;
+  }
+  #ourFriends > h3 {
+    font-size: 25px;
+  }
+  .pages > li > a > button {
+    margin: 0 0.2em 0 0;
+  }
+  #card:nth-last-child(-n+5) {
+    display: none;
+  }
 }
