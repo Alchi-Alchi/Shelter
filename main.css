@@ -87,7 +87,7 @@
   color: #292929;
 }
 
-#makeBtn:hover {
+#makeBtn:hover, #getBtn:hover {
   transition: all 1s ease;
   background-color: #FDDCC4;
 }
@@ -97,13 +97,7 @@
   margin: 1em 0 7em 0;
 }
 
-#getBtn:hover {
-  transition: all 1s ease;
-  background-color: #292929;
-  color: #F1CDB3;
-}
-
-#blocks {
+#aboutUs, #ourFriends, #help, #donation {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -136,6 +130,88 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: #545454;
+}
+
+.slider-pets {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.name {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.type, .breed {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.description, .description-list {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.title {
+  font-weight: bold;
 }
 
 #btnArrow1, #btnArrow2 {
@@ -297,8 +373,8 @@
   color: #292929;
 }
 
-@media (max-width: 768px) {
-  #ourFriends, #help, #donation, #aboutUs, #main, #blocks {
+@media (max-width: 1280px) {
+  #ourFriends, #help, #donation, #aboutUs, #main {
     max-width: 768px;
   }
   .header-main {
@@ -393,7 +469,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   #ourFriends, #help, #donation, #aboutUs, #main, #blocks {
     width: 320px;
   }

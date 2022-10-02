@@ -35,56 +35,54 @@
     <article id="ourFriends">
       <h3>Our friends who <br> are looking for a house</h3>
       <div id="cardsBlock">
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-katrine.png" alt="katrine">
           <span>Katrine</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-jennifer.png" alt="jennifer">
           <span>Jennifer</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-woody.png" alt="woody">
           <span>Woody</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-sophia.png" alt="sophia">
           <span>Sophia</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-timmy.png" alt="timmy">
           <span>Timmy</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-charly.png" alt="charly">
           <span>Charly</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-scarlet.png" alt="scarlet">
           <span>Skarlett</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
-        <div id="card">
+        <div id="card" class="card">
           <img src="../images/pets-freddie.png" alt="freddie">
           <span>Freddie</span>
           <button id="learnMoreBtn">Learn more</button>
         </div>
       </div>
-      <div id="paginator">
-        <nav class="pagination" id="nav">
-          <ul class="pages">
-            <li><a href="#"><button class="disabled"><img src="../images/icons/__ (1).png" alt=""></button></a></li>
-            <li><a href="#"><button class="disabled"><img src="../images/icons/_ (1).png" alt=""></button></a></li>
-            <li><a href="#"><button class="selected">1</button></a></li>
-            <li><a href="#"><button><img src="../images/icons/_.png" alt=""></button></a></li>
-            <li><a href="#"><button><img src="../images/icons/__.png" alt=""></button></a></li>       
-          </ul> 
+      <div class="paginator">
+        <nav class="pagination" id="nav" onclick="pageClick(event)">
+          <a href="#"><button class="disabled"><img src="../images/icons/__ (1).png" alt=""></button></a>
+          <a href="#"><button class="disabled"><img src="../images/icons/_ (1).png" alt=""></button></a>
+          <div class="pages"></div>
+          <a href="#"><button class="interactiveBtn"><img src="../images/icons/_.png" alt=""></button></a>
+          <a href="#"><button class="interactiveBtn"><img src="../images/icons/__.png" alt=""></button></a>
         </nav>
       </div>
     </article>
@@ -102,5 +100,6 @@
       <img src="../images/footer-puppy.png" alt="Puppy" id="footer-puppy">
     </footer>
   </div>
-</body> 
+</body>
+<script src="../js/ourPets.js"></script>
 </html>

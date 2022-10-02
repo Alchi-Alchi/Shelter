@@ -27,23 +27,26 @@
   margin: 0 auto;
 }
 
-#paginator {
+.card {
+  display: none;
+}
+
+.paginator {
   margin: 0 auto;
 }
 
-.pagination {
+.pagination, .pages {
   display: flex;
-  margin: 0 1em 3em -1em;
+  margin: 0 0 3em 0;
 }
 
-.pages > li > a {
-  text-decoration: none;
+.pages > span {
+  line-height: 3rem;
 }
 
-.pages > li > a > button {
+.interactiveBtn, .disabled {
   width: 50px;
   height: 50px;
-  border: 2px solid #F1CDB3;
   border-radius: 50%;
   background-color: #FFFFFF;
   font-family: 'Georgia';
@@ -54,17 +57,12 @@
   text-align: center;
   margin: 0 0.7em 7em 0.7em;
   letter-spacing: 0.06em;
-  color: #292929;
-}
-
-.pages > li > a > button:hover {
-  background-color: #F1CDB3;
   cursor: pointer;
 }
 
-.pagination > ul {
-  list-style-type: none;
-  display: flex;
+.interactiveBtn {
+  border: 2px solid #F1CDB3;
+  color: #292929;
 }
 
 .selected {
@@ -74,10 +72,6 @@
 .disabled {
   border: 2px solid #CDCDCD !important;
   color: #CDCDCD !important;
-}
-
-.disabled:hover {
-  background-color: #FFFFFF !important;
 }
 
 @media (max-width: 768px) {

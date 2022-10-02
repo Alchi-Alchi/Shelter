@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -56,7 +60,6 @@ nav {
 
 #menu > li > a {
   margin: 10px 15px;
-  text-decoration: none;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
@@ -142,7 +145,12 @@ nav {
   transition-duration: 0.5s;
 }
 
-.menu__item:hover {
+.menu__item > a {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.menu__item > a:hover {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: #F1CDB3;
@@ -159,30 +167,33 @@ nav {
   justify-content: space-around;
   align-items: center;
   gap: 1em;
+  max-width: 1280px;
+  overflow: hidden;
 }
 
-#card > img {
+.card > img {
   margin: 1em 19px 1em 19px;
 }
 
-#card {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   min-height: 30em;
+  margin: 1em;
 }
 
-#card:hover #learnMoreBtn{
+.card:hover #learnMoreBtn{
   box-shadow: 0 0 5px 5px #FFFFFF;
 }
 
-#card:hover {
+.card:hover {
   background-color: #F1CDB3;
   cursor: pointer;
 }
 
-#card > span {
+.card > span {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -251,11 +262,6 @@ nav {
   color: #FFFFFF;
 }
 
-#contacts > a, #adress > a {
-  display: flex;
-  text-decoration: none;
-}
-
 #contacts > a > h4, #adress > a > h4 {
   font-family: 'Georgia';
   font-style: normal;
@@ -267,6 +273,7 @@ nav {
 }
 
 #contacts > a > img, #adress > a > img {
+  float: left;
   margin-right: 1em;
 }
 
@@ -276,7 +283,7 @@ nav {
   text-decoration-thickness: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   #ourFriends, .header, .footer {
     max-width: 768px;
   }
@@ -304,7 +311,7 @@ nav {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   #ourFriends, .header, .footer {
     width: 320px;
   }

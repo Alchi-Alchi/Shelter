@@ -26,10 +26,10 @@
             <span></span>
           </label>
           <ul class="menu__box">
-            <li class="menu__item">About the shelter</li>
-            <li class="menu__item">Our pets</li>
-            <li class="menu__item">Help the shelter</li>
-            <li class="menu__item">Contacts</li>
+            <li class="menu__item"><a href="">About the shelter</a></li>
+            <li class="menu__item"><a href="pages/ourPets.html">Our pets</a></li>
+            <li class="menu__item"><a href="#help">Help the shelter</a></li>
+            <li class="menu__item"><a href="#footer">Contacts</a></li>
           </ul>
         </div>
       </header>
@@ -42,7 +42,7 @@
         <img src="images/start-screen-puppy.png" alt="Puppy">
       </div>
     </div>
-    <article id="blocks">
+    <article class="blocks">
       <div id="aboutUs">
         <img src="images/about-pets.png" alt="Pets">
         <div id="text-block_aboutUs">
@@ -53,22 +53,70 @@
       </div>
       <div id="ourFriends">
         <h3>Our friends who <br> are looking for a house</h3>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" class="image">
+            <div class="text-content">
+              <p class="name"></p>
+              <div class="typeAndBreed">
+                <span class="type"></span>-<span class="breed"></span>
+              </div>
+              <p class="description"></p>
+              <ul class="description-list">
+                <li><span class="title">Age:</span><span class="age"></span></li>
+                <li><span class="title">Inoculations:</span><span class="inoculations"></span></li>
+                <li><span class="title">Diseases:</span><span class="diseases"></span></li>
+                <li><span class="title">Parasites:</span><span class="parasites"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div id="cardsBlock">
           <button id="btnArrow1"><img src="images/icons/Arrow.png" alt="Prev"></button>
-          <div id="card">
-            <img src="images/pets-katrine.png" alt="katrine">
-            <span>Katrine</span>
-            <button id="learnMoreBtn">Learn more</button>
-          </div>
-          <div id="card">
-            <img src="images/pets-jennifer.png" alt="jennifer">
-            <span>Jennifer</span>
-            <button id="learnMoreBtn">Learn more</button>
-          </div>
-          <div id="card">
-            <img src="images/pets-woody.png" alt="woody">
-            <span>Woody</span>
-            <button id="learnMoreBtn">Learn more</button>
+          <div class="slider-pets">
+            <div class="slider-wrapper">
+              <div class="card" id="Katrine">
+                <img src="images/pets-katrine.png" alt="katrine">
+                <span>Katrine</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Jennifer">
+                <img src="images/pets-jennifer.png" alt="jennifer">
+                <span>Jennifer</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Woody">
+                <img src="images/pets-woody.png" alt="woody">
+                <span>Woody</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Sophia">
+                <img src="images/pets-sophia.png" alt="sophia">
+                <span>Sophia</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Timmy">
+                <img src="images/pets-timmy.png" alt="timmy">
+                <span>Timmy</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Charly">
+                <img src="images/pets-charly.png" alt="charly">
+                <span>Charly</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Skarlett">
+                <img src="images/pets-scarlet.png" alt="scarlet">
+                <span>Skarlett</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+              <div class="card" id="Freddie">
+                <img src="images/pets-freddie.png" alt="freddie">
+                <span>Freddie</span>
+                <button id="learnMoreBtn">Learn more</button>
+              </div>
+            </div>
           </div>
           <button id="btnArrow2"><img src="images/icons/Arrow.png" alt="Next"></button>
         </div>
@@ -112,5 +160,6 @@
       <img src="images/footer-puppy.png" alt="Puppy" id="footer-puppy">
     </footer>
   </div>
-</body> 
+</body>
+<script src="js/mainPage.js"></script>
 </html>
